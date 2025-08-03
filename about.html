@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jose's Market Official Website">
+    <title>Jose's Market</title>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="Assets/Logo1.png">
+    <link rel="stylesheet" href="https://use.typekit.net/mil3lhe.css">
+
+   
+</head>
+
+<body>
+
+    <header id="sticky-header">
+        <div class="mobile-header">
+            <a href="index.html" aria-label="Go to homepage">
+                <img id="logo" src="Assets/Logo1.png" alt="Jose's Market Logo">
+            </a>
+            <button id="menu-button" aria-controls="nav-bar" aria-expanded="false" aria-label="Toggle navigation">
+                ☰        
+            </button>
+        </div>
+
+
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#products">Products</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="paragraph-box">
+            <h1 class="title3">About Us</h1>
+            <p>We’re a family owned grocery store in Wimauma, FL, proudly serving our community since 1993. From everyday essentials to unique Latin American goods, fresh produce, handmade cakes, and authentic Mexican dishes, we’re here to share great food and service with everyone who walks through our doors.
+            </p>
+        </div>
+
+        <div class="full-width-image2">
+            <img src="Assets/historyImages/modernPuesto.png" alt="Modern Jose's Market Image">
+        </div>
+
+        <div class ="history-box">
+
+            <div class="about-text-box">
+                <h1 class="title">Our Story</h1>
+                <p>Jose’s Market was started in 1993 by Jose and Reyna Rocha. Back then, it was just a small wooden shed on the corner of 674 and West Lake Drive, offering produce to the local community. It was one of the first spots in the area where people could buy groceries without having to travel far.
+                </p>
+                <img src="Assets/historyImages/owners.png" alt="Jose and Reyna Rocha" class="owners-image">
+                <p>
+                    Don Jose comes from a family of butchers. He learned to cook carnitas and chicharrones, and we’re still known for them today. That tradition has been passed down to his children.
+                    <br><br>
+                    For many years, the store was run entirely by family, including children, grandchildren, and in laws.
+                </p>
+            </div>
+
+            <div class="history-image">
+                <img src="Assets/historyImages/history.png" alt="Jose's Market Image">
+            </div>
+        </div>
+
+        <div class ="history-box growth">
+
+            <div class="about-text-box">
+                <h1 class="title">Growth</h1>
+                <p>Over the years, we have expanded and improved our store to offer a larger space and a wider selection of products.
+                Our team has also grown, and we’re grateful to have wonderful staff who help us deliver excellent service every day.
+                </p>
+            </div>
+
+            <div class="history-image">
+                <img src="Assets/historyImages/staff.png" alt="Jose's Market Image">
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div class="solid-line"></div>
+
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="index.html">
+                    <img src="Assets/Logo1.png" alt="Jose's Market Logo">
+                </a>
+                <p>&copy; 2025 Jose's Market. All rights reserved.</p>
+                <p>Website by <a href="https://araceligr.com" target="_blank">Araceli</a></p>
+            </div>
+
+            <div>
+                <h4>Contact</h4>
+                <p>Phone:</p>
+                <p>(813) 633-2822</p>
+                <a href="https://www.facebook.com/Josemarketinc/" target="_blank">
+                    <img src="Assets/facebook.png" alt="Facebook Logo" class="social-icon">
+                </a>
+
+            </div>
+            <div>
+                <h4>Address</h4>
+                <p>5151 FL-674, Wimauma, FL 33598, United States</p>
+            </div>
+            <div>
+                <h4>Hours</h4>
+                <p>Monday – Sunday: &emsp; &emsp;8:00 AM – 8:30 PM</p>
+                <p>Special Holidays: &emsp; &emsp;May vary</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const navBar = document.getElementById('nav-bar');
+
+        menuButton.addEventListener('click', () => {
+            const expanded = menuButton.getAttribute('aria-expanded') === 'true';
+            menuButton.setAttribute('aria-expanded', String(!expanded));
+            navBar.classList.toggle('active');
+    });
+    </script>
+
+</body>
+</html>
+
+
