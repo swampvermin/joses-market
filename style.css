@@ -70,6 +70,16 @@ a:hover {
     cursor: pointer;
     margin-top: 10px;
     font-size: 2rem;
+
+    color: #040202; /* black */
+    transition: color 0.2s ease;
+    
+}
+
+/* Change color when clicked (nav active) */
+#nav-bar.active + #menu-button,
+#menu-button[aria-expanded="true"] {
+    color: #CB4026; /* red */
 }
 
 .scrolling-banner {
@@ -578,3 +588,36 @@ a:hover {
     }
 
 }
+
+
+@media (max-width: 480px) {
+
+  footer {
+    margin: 0 20px;
+    padding: 30px 0;
+  }
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns like Refuge */
+    gap: 20px;
+    align-items: start;
+    text-align: left;
+    padding: 0;
+  }
+
+  .footer-content > div {
+    width: 100%;
+  }
+
+  .footer-logo img {
+    width: 70%;
+    margin-bottom: 10px;
+  }
+
+  .contact-section a{
+    color: #040202;
+    
+  }
+}
+
